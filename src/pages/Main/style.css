@@ -1,0 +1,80 @@
+.users-list{
+    max-width: 700px;
+    margin: 20px auto 0;
+    padding: 0 20px;
+}
+
+.users-list article{
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.users-list article strong{
+    font-size: 16px;
+    color: #999;
+    margin-top: 5px;
+    line-height: 24px;
+}
+
+.btn_account {
+    height: 42px;
+    border-radius: 5px;
+    border: 2px solid #dacf2f;
+    background: none;
+    margin-top: 10px;
+    color: #8f8612;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.btn_account:hover{
+    background-color: #8f8612;
+    color: #fff;
+}
+
+.users-list .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.users-list .actions button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 0px;
+    background: #8f8612;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.users-list .actions button:hover{
+    opacity: 0.7;
+}
+
+.users-list .actions button[disabled]{
+    opacity: 0.5;
+    cursor: default;
+}
+
+.users-list .actions button[disabled]:hover{
+    opacity: 0.5;
+    cursor: default;
+}
+
+.users-list span{
+    display: flex;
+    flex-direction: column;
+}
