@@ -1,10 +1,10 @@
-.users-list{
+.accounts-list{
     max-width: 700px;
     margin: 20px auto 0;
     padding: 0 20px;
 }
 
-.users-list article{
+.accounts-list article{
     background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -14,9 +14,10 @@
     flex-direction: column;
 }
 
-.users-list article strong{
+.accounts-list article strong{
     font-size: 16px;
     color: #999;
     margin-top: 5px;
     line-height: 24px;
 }
+

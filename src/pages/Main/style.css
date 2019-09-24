@@ -2,6 +2,7 @@
     max-width: 700px;
     margin: 20px auto 0;
     padding: 0 20px;
+    
 }
 
 .users-list article{
@@ -12,6 +13,7 @@
     margin-bottom: 15px;
     display: flex;
     flex-direction: column;
+  
 }
 
 .users-list article strong{
@@ -21,12 +23,13 @@
     line-height: 24px;
 }
 
-.btn_account {
+.btn_account{
+   
     height: 42px;
     border-radius: 5px;
     border: 2px solid #dacf2f;
     background: none;
-    margin-top: 10px;
+    margin: 30px;
     color: #8f8612;
     font-weight: bold;
     font-size: 16px;
@@ -40,6 +43,29 @@
 
 .btn_account:hover{
     background-color: #8f8612;
+    color: #fff;
+}
+
+.btn_addUser{
+    height: 52px;
+    border-radius: 5px;
+    border: 2px solid #15b600;
+    background: none;
+    margin: 30px;
+    color: #244400;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+    cursor: pointer;
+
+}
+
+.btn_addUser:hover{
+    background-color: #447709;
     color: #fff;
 }
 

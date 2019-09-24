@@ -1,8 +1,16 @@
+## `About this project`
+
+Esse projeto tem o objetivo de mostrar os dados de uma API.
+Cadastrar, remover e editar novos usuarios.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+
 
 ### `npm start`
 

@@ -8,7 +8,7 @@ export default class Main extends Component {
         users: [],
         usersInfos: {},
         page: 1,
-        
+
     };
 
     componentDidMount() {
@@ -42,19 +42,27 @@ export default class Main extends Component {
     }
 
     render() {
-        
+
         const { users, page, usersInfos } = this.state;
         return (
             <div className='users-list'>
+            <Link to={`/AddUser/`} className="btn_addUser" >Novo Cadastro</Link>
                 {users.map(users => (
-
                     <article key={users.id}>
-                        <h3>{users.name}</h3>
+                        <h1>{users.name}</h1>
+                        <strong>ID: /Users/{users.id}</strong>
                         <strong>CPF: {users.cpf}</strong>
                         <strong>E-mail: {users.email}</strong>
-                        <Link to={`users/${users.id}/bank_accounts/`} className="btn_account" href="">Acessar Conta Bancaria</Link>
-                    </article>
+                        <h3>Contas Bancarias Vinculadas a {users.name}</h3>  
+                        <h4>{users.bankAccounts[0]}</h4>
+                        <h4>{users.bankAccounts[1]}</h4>
+                        <h4>{users.bankAccounts[2]}</h4>
+                        <h4>{users.bankAccounts[3]}</h4> 
+                      </article>
+                     
                 ))}
+
+<Link to={`/bank_accounts/`} className="btn_account" href="">Acessar Contas Bancarios</Link>
 
                 <div className="actions">
                     <button disabled={page === 1} onClick={this.prevPage}>Anterior</button>
