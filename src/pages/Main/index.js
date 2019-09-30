@@ -18,7 +18,7 @@ export default class Main extends Component {
     // Chamada da API
     loadUsers = async (page = 1) => {
 
-        const response = await api.get(`/users?page=${page}&?limit=5`);
+        const response = await api.get(`/users`);
         console.log(response.data["hydra:member"]);
         const { hydra: member, ...usersInfos } = response.data
         this.setState({ users: response.data["hydra:member"], usersInfos, page });

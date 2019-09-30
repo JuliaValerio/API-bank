@@ -4,33 +4,32 @@ import api from '../../services/api';
 import './style.css'
 
 const MyForm = () => {
+  
   const { getFieldProps, handleSubmit, errors, touched } = useFormik({
     initialValues: {
       
-        name: "",
-        email: "",
-        cpf: ""
+     users: {
+        "name": "",
+        "cpf": "",
+        "email": "",
+        "bankAccounts": [
+          " "
+        ]
+      }
       
     },
-    validate: values => {
-      const err = {
-      
-        name: "",
-        email: "",
-        cpf: ""
-      };
-      const message = "Campo obrigatório";
-      if (!values.name) err.name = message;
-      if (!values.email) err.email = message;
-      if (!values.cpf) err.cpf = message;
-      
 
-      return err;
-    },
     onSubmit: (response, error) => {
         api.post('/user', {
-            firstName: 'Fred',
-            lastName: 'Flintstone'
+          users: {
+            "name": "",
+            "cpf": "",
+            "email": "",
+            "bankAccounts": [
+              " "
+            ]
+          }
+          
           })
           .then(function (response) {
             console.log(response);
